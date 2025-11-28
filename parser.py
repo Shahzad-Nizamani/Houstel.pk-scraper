@@ -42,6 +42,7 @@ def get_data():
                 print(gender)
 
                 location = location[1].strip()
+                hostel["location"] = location
                 print(location)
 
                 price_details = "\n\nROOMS AND PRICE DETAILS: \n\n" 
@@ -91,5 +92,3 @@ def get_data():
     
     with open("hostels.json", 'w') as f:
         json.dump(hostels, f, indent=4)
-
-get_data()

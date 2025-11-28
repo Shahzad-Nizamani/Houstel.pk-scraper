@@ -61,10 +61,8 @@ def get_links():
             page += 1
     
     with open("links.json",'w') as f:
-       json.dump(links, f, indent=4)  
-    
-    links = modify_links()
+       json.dump(links, f, indent=4) 
+
+    modify_links()
     
     return links
-
-get_links()
