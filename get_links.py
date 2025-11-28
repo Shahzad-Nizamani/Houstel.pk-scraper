@@ -60,6 +60,8 @@ def get_links():
 
             page += 1
     
+    driver.quit()
+    
     with open("links.json",'w') as f:
        json.dump(links, f, indent=4) 
 
